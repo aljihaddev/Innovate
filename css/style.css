@@ -1,0 +1,230 @@
+/* All common css start */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+/* All common css end */
+
+/* CSS Start */
+.navbar {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 0;
+    background: #FBF3F01a;
+    backdrop-filter: blur(5px);
+}
+.navbar-brand img{
+    transition: .5s;
+}
+.navbar-brand img:hover{
+    transform: scale(1.1);
+}
+.nav-link{
+    color: #29313D;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    transition: .5s;
+    margin: 0 20px;
+    position: relative;
+}
+.nav-link:hover{
+    color: #FF5538;
+    transform: scale(1.1);
+}
+.nav-link:hover i{
+    color: #FF5538;
+    transform: scale(1.1);
+}
+.nav-link i{
+    color: #29313D;
+    transition: .5s;
+}
+.nav-link::before{
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: #FF5538;
+    top: 8px;
+    left: 8px;
+    border-radius: 3px;
+    content: "";
+    transition: .5s;
+}
+.nav-link:hover::before{
+    width: 50%;
+}
+.nav-link::after{
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: #FF5538;
+    bottom: 5px;
+    left: 8px;
+    border-radius: 3px;
+    content: "";
+    transition: .5s;
+}
+.nav-link:hover::after{
+    width: 80%;
+}
+.headerBtn a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #FF5538;
+    border-radius: 18px;
+    padding: 15px 30px;
+    font-family: "Nunito", sans-serif;
+    border: 1px solid #FF5538;
+    transition: .5s;
+}
+
+.headerBtn a:hover{
+    color: #FF5538;
+    background: transparent;
+}
+
+/* CSS End */
+
+/* CSS Start */
+#bannerPart{
+    padding: 243px 0;
+    background: url(../images/Header.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bannarHeading h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #29313D;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 auto;
+    width: 650px;
+    line-height: 130%;
+}
+.bannarHeading p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    padding: 25px 0 45px 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 550px;
+    line-height: 200%;
+}
+.bannarBtn{
+    display: flex;
+    justify-content: center;
+}
+.bannarBtn a{
+    padding: 15px 30px;
+    background: #FF5538;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    border-radius: 18px;
+    margin: 12px;
+    border: 1px solid #FF5538;
+    transition: .5s;
+}
+.bannarBtn a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+/* CSS End */
+
+.aboutBox{
+    position: relative;
+}
+.aboutCard{
+    padding: 30px;
+    background: #fff;
+    position: absolute;
+    top: -200px;
+    left: 0;
+}
+.aboutCard h3{
+    text-transform: capitalize;
+    font-size: 25px;    
+    font-weight: 600;
+    color: #29313D;
+    font-family: "Poppins", sans-serif;
+    line-height: 160%;
+    padding: 35px 0 15px 0;
+}
+.aboutCard p{
+    text-transform: capitalize;
+    font-size: 18px;    
+    font-weight: 400;
+    color: #29313D;
+    font-family: "Nunito", sans-serif;
+    line-height: 200%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.outText{
+    position: fixed;
+    z-index: 8;
+    display: flex;
+    top: 300px;
+    left: 20px;
+    /* transform: rotate(-90deg); */
+}
+.outText .email{
+    margin: 0 20px;
+}
+.outText .fr{
+    margin: 0 20px;
+}
+
+.outText .scroll{
+    display: flex;
+}
+.outText .scroll img{
+    transform: rotate(90deg);
+}
